@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.movediv{
+    animation:moveblock 10s linear infinite;
+}
+@keyframes moveblock {
+    0%{
+        top:0;
+    }
+    100%{
+        top:-50%;
+    }
+}
+
+.fadedown{
+    animation:fadeblock 5s linear infinite; 
+}
+@keyframes fadeblock {
+    0%{
+        opacity:0;
+        transform: translatey(-10px);
+    }
+    100%{
+        opacity:1;
+        transform: translatey(0);
+    }
+}
+
+.fadeleft{
+    animation:fadeInLeft 5s linear infinite; 
+}
+
+
+@keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-50px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }  

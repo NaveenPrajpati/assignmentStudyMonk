@@ -18,7 +18,6 @@ export default function Signup() {
         Navigate('/login')
       })
       .catch(err=>console.log(err))
-      
     };
 
   return (

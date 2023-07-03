@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-2">
           {/* Logo */}
           <button className="flex items-center hover:scale-105" onClick={()=>navigate('/')}>
-            <span className="text-white text-xl font-semibold">dev.Naveen</span> 
+            <span className="text-white text-xl font-semibold underline">dev.Naveen</span> 
           </button>
 
           {/* Search */}

@@ -10,7 +10,12 @@ export default function Login() {
   
     const handleSubmit = (e) => {
       e.preventDefault();
-      // Add login logic here
+      addUser({name,email,location,password,jobrole})
+      .then(res=>{
+        console.log('user registered')
+        Navigate('/login')
+      })
+      .catch(err=>console.log(err))
     };
 
   return (
